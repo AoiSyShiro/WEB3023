@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản Lý Admin | DEV</title>
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/js/style.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+    <div class="dashboard--content">
+      <div class="header--wrapper">
+        <div class="header--title">
+          <span>Primary</span>
+          <h2>Thống kê doanh thu</h2>
+        </div>
+        <div class="user--info">
+          <div class="search--box">
+            <i class="material-symbols-outlined">search</i>
+            <input type="text" placeholder="Tìm kiếm" aria-label="Search" />
+          </div>
+          <img
+            class="image"
+            src="images/feixiao-artist-lightning-v0-4v65.png"
+            alt="admin"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="card--container">
+      <h3 class="main--title">Dữ liệu hôm nay</h3>
+      <div class="card--wrapper">
+        <div class="payment--card">
+          <div class="card--header">
+            <div class="amount">
+              <span class="title">Tổng số tiền thanh toán</span>
+              <span class="amount--value" id="total-payment">Đang tải...</span>
+            </div>
+            <i class="material-symbols-outlined">attach_money</i>
+          </div>
+          <span class="card--detail">Tổng doanh thu trong ngày</span>
+        </div>
+        <div class="payment--card">
+          <div class="card--header">
+            <div class="amount">
+              <span class="title">Combo Vé + Đồ ăn</span>
+              <span class="amount--value" id="combo-price">Đang tải...</span>
+            </div>
+            <i class="material-symbols-outlined">confirmation_number</i>
+          </div>
+          <span class="card--detail">Chi phí cho combo dịch vụ</span>
+        </div>
+        <div class="payment--card">
+          <div class="card--header">
+            <div class="amount">
+              <span class="title">Phí Đặt Chỗ</span>
+              <span class="amount--value" id="booking-fee">Đang tải...</span>
+            </div>
+            <i class="material-symbols-outlined">where_to_vote</i>
+          </div>
+          <span class="card--detail">Tổng phí đặt chỗ trong ngày</span>
+        </div>
+        <div class="payment--card">
+          <div class="card--header">
+            <div class="amount">
+              <span class="title">Vé Xem Phim</span>
+              <span class="amount--value" id="ticket-price">Đang tải...</span>
+            </div>
+            <i class="material-symbols-outlined">movie</i>
+          </div>
+          <span class="card--detail">Doanh thu từ vé xem phim</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabular--wrapper">
+      <h3 class="main--title">Finance Data</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Ngày</th>
+              <th>Số tiền</th>
+              <th>Chi tiết</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>01/01/2022</td>
+              <td>$100.000</td>
+              <td>Vé xem phim Avengers</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>02/01/2022</td>
+              <td>$150.000</td>
+              <td>Vé xem phim Spider-Man</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>03/01/2022</td>
+              <td>$200.000</td>
+              <td>Vé xem phim Batman</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>04/01/2022</td>
+              <td>$120.000</td>
+              <td>Vé xem phim Black Widow</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

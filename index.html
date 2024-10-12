@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản Lý Admin | DEV</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Sau đó mới đặt file script custom -->
+    <script src="/js/style.js"></script>
+
+    <!-- Linkking Google Font Link For Icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img id="logo" src="images/logo.jpg" alt="logo" />
+        <h2>Admin Web</h2>
+      </div>
+      <ul class="sidebar-links">
+        <h4>
+          <span> Main Menu </span>
+          <div class="menu-separator"></div>
+        </h4>
+
+        <li>
+          <a href="#" id="show-dashboard">
+            <span class="material-symbols-outlined">dashboard</span>
+            Thống kê doanh thu
+          </a>
+        </li>
+
+        <li>
+          <a href="#" id="show-booking-history">
+            <span class="material-symbols-outlined"> overview</span>
+            Lịch sử đặt vé
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined"> monitoring</span>
+            Thống kê số phim
+          </a>
+        </li>
+        <h4><span> General </span></h4>
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined"> format_list_bulleted</span>
+            Thể loại phim
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined"> restaurant</span>
+            Đồ ăn/Đồ uống
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined"> movie </span>
+            Quản lý phim
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined"> manage_accounts </span>
+            Quản lý tài khoản
+          </a>
+        </li>
+        <li>
+          <a href="#" id="show-notifications">
+            <span class="material-symbols-outlined">notifications_active</span>
+            Thông báo
+          </a>
+        </li>
+        <h4><span> Tài khoản </span></h4>
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined">account_circle</span>
+            Profile
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined">settings</span>
+            Cài Đặt
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="material-symbols-outlined"> logout </span>
+            Đăng Xuất
+          </a>
+        </li>
+      </ul>
+
+      <div class="user-account">
+        <div class="user-profile">
+          <img src="images/logo.jpg" alt="profile-img" />
+          <div class="user-detail">
+            <h3>Iris</h3>
+
+            <span>Web Admin</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div id="loading" class="loading" style="display: none">
+      <img src="https://media.tenor.com/CKIexctq4C8AAAAi/arisu-blue-archive.gif" alt="Loading..." />
+      <div id="loading-text">Đang tải... <span id="loading-percent">0%</span></div>
+    </div>
+
+    <!-- Khu vực hiển thị nội dung -->
+    <div id="content-area"></div>
+  </body>
+</html>

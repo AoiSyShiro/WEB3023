@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/css/notification.css" />
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/js/style.js"></script>
+    <title>Quản lý Thông báo - Hệ thống Đặt vé</title>
+  </head>
+  <body>
+    <div class="dashboard--content">
+      <div class="header--wrapper">
+        <div class="header--title">
+          <span>Primary</span>
+          <h2>Thông báo</h2>
+        </div>
+        <div class="user--info">
+          <div class="search--box">
+            <i class="material-symbols-outlined">search</i>
+            <input type="text" placeholder="Tìm kiếm" aria-label="Search" />
+          </div>
+          <img
+            class="image" id="image"
+            src="images/feixiao-artist-lightning-v0-4v65.png"
+            alt="admin"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <header>
+        <div class="notif_box">
+          <h2 class="title">Thông báo</h2>
+          <span id="notifes">5</span>
+        </div>
+        <p id="mark_all">Đánh dấu tất cả là đã đọc</p>
+      </header>
+      <main>
+        <div class="notif_card unread">
+          <img src="./images/loading.jpg" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Hệ thống</strong> đã xác nhận đặt vé cho bạn
+              <b>Phim Avengers: Endgame</b>
+            </p>
+            <p class="time">1m trước</p>
+          </div>
+        </div>
+        <div class="notif_card unread">
+          <img src="./images/loading.jpg" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Hệ thống</strong> đã hủy đặt vé cho bạn
+              <b>Phim Lion King</b>
+            </p>
+            <p class="time">5m trước</p>
+          </div>
+        </div>
+        <div class="notif_card unread">
+          <img src="./images/loading.jpg" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Hệ thống</strong> thông báo bạn có một suất đặt vé cho
+              <strong class="link">Phim Avatar 2</strong>
+            </p>
+            <p class="time">1 ngày trước</p>
+          </div>
+        </div>
+        <div class="notif_card">
+          <img src="./images/loading.jpg" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Hệ thống</strong> gửi tin nhắn cho bạn
+            </p>
+            <p class="time">5 ngày trước</p>
+          </div>
+        </div>
+        <div class="message">
+          <p>
+            Chào bạn, cảm ơn bạn đã đặt vé tại hệ thống của chúng tôi. Chúng tôi
+            hy vọng bạn sẽ có những trải nghiệm tuyệt vời!
+          </p>
+        </div>
+        <div class="notif_card">
+          <img src="./images/loading.jpg" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Hệ thống</strong> nhắc nhở bạn rằng phim
+              <strong class="link">John Wick</strong> sắp chiếu vào lúc 19:00
+            </p>
+            <p class="time">1 tuần trước</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
